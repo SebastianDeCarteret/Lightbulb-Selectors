@@ -1,19 +1,16 @@
 count = 0;
 
-function bulb1() {
-  count++;
-  document.querySelector("#counter-text").innerHTML = count;
-  document.querySelector("#lightbulb1").classList.toggle("active");
+function bulb(bulbNumber) {
+  updateGrammarAndCount();
+  document.querySelector(`#lightbulb${bulbNumber}`).classList.toggle("active");
 }
 
-function bulb2() {
+function updateGrammarAndCount() {
   count++;
   document.querySelector("#counter-text").innerHTML = count;
-  document.querySelector("#lightbulb2").classList.toggle("active");
-}
-
-function bulb3() {
-  count++;
-  document.querySelector("#counter-text").innerHTML = count;
-  document.querySelector("#lightbulb3").classList.toggle("active");
+  if (count === 1) {
+    document.querySelector("#times-text").innerHTML = "time";
+  } else {
+    document.querySelector("#times-text").innerHTML = "times";
+  }
 }

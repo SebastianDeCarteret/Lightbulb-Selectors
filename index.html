@@ -9,15 +9,19 @@
   <body>
     <h1 class="title">Lightbulb Selectors</h1>
     <h3 class="subtitle">
-      You've clicked the lights <span id="counter-text">0</span> times
+      You've clicked the lights <span id="counter-text">0</span>
+      <span id="times-text">times</span>
     </h3>
     <div id="wrapper">
       <div class="row">
-        <div id="lightbulb1" class="item lightbulb active" onclick="bulb1()">
-          💡
-        </div>
-        <div id="lightbulb2" class="item lightbulb" onclick="bulb2()">💡</div>
-        <div id="lightbulb3" class="item lightbulb" onclick="bulb3()">💡</div>
+        <div id="lightbulb1" class="item lightbulb" onClick="bulb(1)">💡</div>
+        <div id="lightbulb2" class="item lightbulb" onClick="bulb(2)">💡</div>
+        <div id="lightbulb3" class="item lightbulb" onClick="bulb(3)">💡</div>
+      </div>
+      <div class="row">
+        <div id="lightbulb4" class="item lightbulb" onClick="bulb(4)">💡</div>
+        <div id="lightbulb5" class="item lightbulb" onClick="bulb(5)">💡</div>
+        <div id="lightbulb6" class="item lightbulb" onClick="bulb(6)">💡</div>
       </div>
     </div>
     <!--Connect your script here-->
