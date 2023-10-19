@@ -8,9 +8,7 @@ function bulb(bulbNumber) {
 function updateGrammarAndCount() {
   count++;
   document.querySelector("#counter-text").innerHTML = count;
-  if (count === 1) {
-    document.querySelector("#times-text").innerHTML = "time";
-  } else {
-    document.querySelector("#times-text").innerHTML = "times";
-  }
+  count === 1
+    ? (document.querySelector("#times-text").innerHTML = "time")
+    : (document.querySelector("#times-text").innerHTML = "times");
 }
